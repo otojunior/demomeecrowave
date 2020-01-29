@@ -28,7 +28,7 @@ public class ArtigoRest {
 	 */
 	@GET
 	@Path("{id}")
-	public Response obter(@PathParam("id") Integer id) {
+	public Response obter(@PathParam("id") Long id) {
 		return Response
 			.ok()
 			.entity(service.obter(id))

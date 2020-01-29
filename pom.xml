@@ -7,11 +7,32 @@
 	<artifactId>demomeecrowave</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<properties>
+		<dependency.meecrowave.version>1.2.9</dependency.meecrowave.version>
+		<dependency.lombok.version>1.18.10</dependency.lombok.version>
+		<dependency.h2.version>1.4.192</dependency.h2.version>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.meecrowave</groupId>
 			<artifactId>meecrowave-core</artifactId>
-			<version>1.2.1</version>
+			<version>${dependency.meecrowave.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.meecrowave</groupId>
+			<artifactId>meecrowave-jpa</artifactId>
+			<version>${dependency.meecrowave.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${dependency.lombok.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>${dependency.h2.version}</version>
 		</dependency>
 	</dependencies>
 

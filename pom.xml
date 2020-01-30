@@ -11,6 +11,8 @@
 		<dependency.meecrowave.version>1.2.9</dependency.meecrowave.version>
 		<dependency.lombok.version>1.18.10</dependency.lombok.version>
 		<dependency.h2.version>1.4.192</dependency.h2.version>
+		<dependency.postgresql.version>42.2.9</dependency.postgresql.version>
+		<dependency.hikaricp.version>3.4.2</dependency.hikaricp.version>
 	</properties>
 
 	<dependencies>
@@ -29,10 +31,22 @@
 			<artifactId>lombok</artifactId>
 			<version>${dependency.lombok.version}</version>
 		</dependency>
+		<!--
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<version>${dependency.h2.version}</version>
+		</dependency>
+		-->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>${dependency.postgresql.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.zaxxer</groupId>
+			<artifactId>HikariCP</artifactId>
+			<version>${dependency.hikaricp.version}</version>
 		</dependency>
 	</dependencies>
 
@@ -51,7 +65,7 @@
 			<plugin>
 				<groupId>org.apache.meecrowave</groupId>
 				<artifactId>meecrowave-maven-plugin</artifactId>
-				<version>1.2.1</version>
+				<version>${dependency.meecrowave.version}</version>
 			</plugin>
 		</plugins>
 	</build>
